@@ -16,13 +16,15 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
 
-        <wiremock.version>2.27.2</wiremock.version>
+        <!-- Last working version - breaks starting with 2.25.0 -->
+        <!-- <wiremock.version>2.24.1</wiremock.version> -->
+        <wiremock.version>2.30.1</wiremock.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>com.github.tomakehurst</groupId>
-            <artifactId>wiremock-standalone</artifactId>
+            <artifactId>wiremock-jre8-standalone</artifactId>
             <version>${wiremock.version}</version>
         </dependency>
     </dependencies>
